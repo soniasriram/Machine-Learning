@@ -1,0 +1,32 @@
+Mini Project Notebook: Stock Prices Anomaly Detection
+Learning Objectives
+At the end of the experiment, you will be able to :
+
+apply PCA based analysis on various stocks data
+analyze and create time series data
+implement LSTM auto-encoders
+detect the anomalies based on the loss
+Information
+Autoencoder Neural Networks try to learn data representation of its input. Usually, we want to learn an efficient encoding that uses fewer parameters/memory. The encoding should allow for output similar to the original input. In a sense, we’re forcing the model to learn the most important features of the data using as few parameters as possible.
+
+LSTM autoencoder is an encoder that makes use of LSTM encoder-decoder architecture to compress data using an encoder and decode it to retain original structure using a decoder.
+
+Anomaly Detection
+
+Anomaly detection refers to the task of finding/identifying rare events/data points. Some applications include - bank fraud detection, tumor detection in medical imaging, and errors in written text.
+
+A lot of supervised and unsupervised approaches for anomaly detection have been proposed. Some of the approaches include - One-class SVMs, Bayesian Networks, Cluster analysis, and Neural Networks.
+
+We will use an LSTM Autoencoder Neural Network to detect/predict anomalies (sudden price changes) in the S&P 500 index.
+
+Dataset
+This mini-project consists of two parts and two different stock price datasets:
+
+PART A
+Using the S&P 500 stock prices data of different companies, we will perform a PCA based analysis.
+
+PART B
+Using the S&P 500 stock price index time series data, we will perform anomaly detection in the stock prices across the years. The dataset chosen is is S&P500 Daily Index a .csv format with one column with a daily timestamp and the second column with the raw, un-adjusted closing prices for each day. This long term, granular time series dataset allows researchers to have a good sized publicly available financial dataset to explore time series trends or use as part of a quantitative finance project.
+
+Problem Statement
+Detect the stock price anomalies by implementing an LSTM autoencoder
